@@ -6,7 +6,7 @@ export default function Home() {
       <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
         <Image
           className="dark:invert"
-          src="/next.svg"
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/next.svg`}
           alt="Next.js logo"
           width={100}
           height={20}
@@ -14,7 +14,7 @@ export default function Home() {
         />
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
           <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+            hola soy agustin
           </h1>
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
             Looking for a starting point or more instructions? Head over to{" "}
@@ -43,7 +43,7 @@ export default function Home() {
           >
             <Image
               className="dark:invert"
-              src="/vercel.svg"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/vercel.svg`}
               alt="Vercel logomark"
               width={16}
               height={16}
@@ -59,6 +59,7 @@ export default function Home() {
             Documentation
           </a>
         </div>
+        <iframe data-testid="embed-iframe" style={{borderRadius: "12px"}} src="https://open.spotify.com/embed/playlist/5es2exD44kajsp3fKi75dn?utm_source=generator" width="100%" height="352" frameBorder="0" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
       </main>
     </div>
   );
